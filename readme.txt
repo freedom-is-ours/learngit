@@ -12,3 +12,6 @@ git status //查看改动，让我们时刻掌握仓库当前的状态
 git diff  //查看具体改动
 
 //版本控制
+git log //查看提交日志
+git reset --hard () //退回()版本
+//HEAD代表当前版本 HEAD^代表上一版本 HRAD~100 往上100个版本
