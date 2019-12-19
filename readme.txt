@@ -52,4 +52,4 @@ git checkout -b <name>或者git switch -c <name> //创建并切换到新的分�
 git branch //查看分支，当前分支前会有*号
 //切换到dev分支后add commit就都是向dev分支提交的了
 git merge dev //将dev分支合并到master上，实际上是将dev的标签改成了master，如果是fast forward的情况
-git branch -d dev //-d就将dev分支删掉
+git branch -d dev //将dev分支删掉,使用-d
