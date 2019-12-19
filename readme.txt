@@ -47,9 +47,12 @@ git rm filename //彻底将版本库中那个文件删掉，完后还需要commi
 
 //分支管理
 git branch dev //创建分支dev
-git switch dev //切换到dev，也可以用 git checkout dev ，checkout命令还有版本退回的作用，注意区分
-git checkout -b <name>或者git switch -c <name> //创建并切换到新的分支，为以上两个命令的
+git switch dev 或者git checkout dev //切换到dev，，checkout命令还有版本退回的作用，注意区分
+git checkout -b <name>或者git switch -c <name> //创建并切换到新的分支，switch是新版本的命令，2.23以前的版本没有
 git branch //查看分支，当前分支前会有*号
 //切换到dev分支后add commit就都是向dev分支提交的了
 git merge dev //将dev分支合并到master上，实际上是将dev的标签改成了master，如果是fast forward的情况
-git branch -d dev //将dev分支删掉,使用-d
+git branch -d dev //-d就将dev分支删掉
+
+//解决冲突
+
