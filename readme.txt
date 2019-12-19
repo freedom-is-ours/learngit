@@ -51,4 +51,4 @@ git switch dev //切换到dev，也可以用 git checkout dev ，checkout命令�
 git checkout -b <name>或者git switch -c <name> //创建并切换到新的分支，为以上两个命令的
 git branch //查看分支，当前分支前会有*号
 //切换到dev分支后add commit就都是向dev分支提交的了
-git merge dev //合并分支
+git merge dev //将dev分支合并到master上，实际上是将dev的标签改成了master
