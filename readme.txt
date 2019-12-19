@@ -36,6 +36,13 @@ git rm filename //彻底将版本库中那个文件删掉，完后还需要commi
             -->ssh-keygen -t rsa -C "youremail@example.com"
             一路回车，然后C:\users\USER\.ssh\id_rsa.pub 是公钥id_rsa.pub是你的公钥
 2.在GitHub上添加ssh key ，把公钥粘贴上
-3.在GitHub创建一个新的repo，与本地的同名， 用命令行PUSH上去：
+3.在GitHub创建一个新的repo，与本地的同名(不同名当然是不好记啦)， 用命令行PUSH上去：
             -->git remote add origin https://github.com/账户名/仓库名.git
-            -->git push -u origin master
+            -->git push -u origin master //把当前分支推送到远程的master分支，此处-u参数把这两个关联起来
+//origin是远程库的默认叫法
+4.此后同步只需要：
+            -->git push origin master
+5.从git克隆
+            -->git clone git@github.com:username/reponame.git //这是利用ssh，还可以用https的，只是clone后面跟的连接不同了
+
+//
