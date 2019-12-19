@@ -45,4 +45,10 @@ git rm filename //彻底将版本库中那个文件删掉，完后还需要commi
 5.从git克隆
             -->git clone git@github.com:username/reponame.git //这是利用ssh，还可以用https的，只是clone后面跟的连接不同了
 
-//
+//分支管理
+git branch dev //创建分支dev
+git switch dev //切换到dev，也可以用 git checkout dev ，checkout命令还有版本退回的作用，注意区分
+git checkout -b <name>或者git switch -c <name> //创建并切换到新的分支，为以上两个命令的
+git branch //查看分支，当前分支前会有*号
+//切换到dev分支后add commit就都是向dev分支提交的了
+git merge dev //合并分支
