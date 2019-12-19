@@ -53,6 +53,8 @@ git branch //查看分支，当前分支前会有*号
 //切换到dev分支后add commit就都是向dev分支提交的了
 git merge dev //将dev分支合并到master上，实际上是将dev的标签改成了master，如果是fast forward的情况
 git branch -d dev //-d就将dev分支删掉
+//解决冲突,当同一处被两个不同分支分别编辑后，merge时就会提示冲突，合并的文件中会将两者不同之处分别保留并标记，这是需要我们手动编辑好再提交
+git log --graph //可以看到分支合并图
 
-//解决冲突
+//如果不用fast forward
 
