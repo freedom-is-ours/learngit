@@ -1,4 +1,4 @@
-怎么pull
+
 Git is a distributed version contral system.
 Git is free software distributed under the GPL.
 ---
@@ -44,7 +44,8 @@ git rm filename //彻底将版本库中那个文件删掉，完后还需要commi
             -->git push origin master
 5.从git克隆
             -->git clone git@github.com:username/reponame.git //这是利用ssh，还可以用https的，只是clone后面跟的连接不同了
-
+6.从github同步
+            -->git pull origin 远程分支名:本地分支名 //如果合并到本地当前分支，就只输入到远程分支名就可以了
 //分支管理
 git branch dev //创建分支dev
 git switch dev 或者git checkout dev //切换到dev，，checkout命令还有版本退回的作用，注意区分
